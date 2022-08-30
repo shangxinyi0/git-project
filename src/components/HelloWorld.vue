@@ -18,7 +18,7 @@ defineProps({
       <h1>我试一试git</h1>
       <h2>Mama,don't worry about me.</h2>
       <h2>今天是个好天气hello world</h2>
-      <h2>今天是个好天气hello world</h2>
+      <h2>今天是个好天气 world</h2>
       <h2>今天是个好天气hello world</h2>
       <h2>今天是个好天气hello world</h2>
     </h3>
