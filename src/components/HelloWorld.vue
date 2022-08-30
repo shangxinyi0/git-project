@@ -15,6 +15,7 @@ defineProps({
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +
       <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
       <h1>我在主分支</h1>
+      <h1>我试一试git</h1>
     </h3>
   </div>
 </template>
