@@ -1,17 +1,27 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import {computed, provide, ref} from "vue";
+provide('testFun',testFun)
+function testFun (){
+  console.log('aaaa')
+}
+let num=0
+const num2=computed(()=>{
+  return num+1
+})
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <button @click="add">
+      {{num2}}
+    </button>
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
   </header>
-
   <main>
     <TheWelcome />
   </main>

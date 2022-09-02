@@ -1,26 +1,19 @@
 <script setup>
+import {inject} from "vue";
+
 defineProps({
   msg: {
     type: String,
     required: true
   }
 })
+const testFun=inject('testFun',Function,true)
+testFun()
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a target="_blank" href="https://vitejs.dev/">Vite</a> +
-      <a target="_blank" href="https://vuejs.org/">Vue 3</a>.
-      <h1>我在主分支</h1>
-      <h1>我试一试git</h1>
-      <h2>Mama,don't worry about me.</h2>
-      <h2>今天是个好天气hello world</h2>
-      <h2>今天是个好天气hello world</h2>
-      <h3>到底是怎么回事嗯????????</h3>
-    </h3>
+    <h1></h1>
   </div>
 </template>
 
